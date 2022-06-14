@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Address Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Vue Address Book</h1>
+        <!-- Inputs for name and address -->
+        <input type="text" id="name-input" placeholder="Enter Name" v-model="nameInput">
+        <input type="text" id="address-input" placeholder="Enter Address" v-model="addressInput">
+
+        <!-- Button to record new addresses -->
+        <button id="record-address" v-on:click="recordAddress" v-show="isValidAddress()">Record Address</button>
+        <!-- display list of addresses -->
+        <div id="display-addresses" v-for="(address,index) in addresses">
+            <b v-on:mouseover="hoverIndex = index">{{ address.name }}</b>
+            <b v-show="hoverIndex == index">{{ address.address }}</b>
+            <button id="delete-address" v-on:click="deleteAddress(index)">X</button>
+        </div>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

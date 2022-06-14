@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Wordle</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header-container">
+        <h1>Wordle</h1>
+      </div>
+      <div id="guesses"></div>
+      <div id="input-container">
+        <div id="message"></div>
+      </div>
+      <div id="keyboard-container">
+        <div class="keyboard-row">
+          <button data-key="q">q</button>
+          <button data-key="w">w</button>
+          <button data-key="e">e</button>
+          <button data-key="r">r</button>
+          <button data-key="t">t</button>
+          <button data-key="y">y</button>
+          <button data-key="u">u</button>
+          <button data-key="i">i</button>
+          <button data-key="o">o</button>
+          <button data-key="p">p</button>
+        </div>
+        <div class="keyboard-row">
+          <div class="spacer-half"></div>
+          <button data-key="a">a</button>
+          <button data-key="s">s</button>
+          <button data-key="d">d</button>
+          <button data-key="f">f</button>
+          <button data-key="g">g</button>
+          <button data-key="h">h</button>
+          <button data-key="j">j</button>
+          <button data-key="k">k</button>
+          <button data-key="l">l</button>
+          <div class="spacer-half"></div>
+        </div>
+        <div class="keyboard-row">
+          <button id="enter" class="wide-button">Enter</button>
+          <button data-key="z">z</button>
+          <button data-key="x">x</button>
+          <button data-key="c">c</button>
+          <button data-key="v">v</button>
+          <button data-key="b">b</button>
+          <button data-key="n">n</button>
+          <button data-key="m">m</button>
+          <button id="del" class="wide-button">Del</button>
+        </div>
+      </div>
+      <span id="games-played">Games played: 0</span
+      ><span id="games-won">Games won: 0</span
+      ><span id="win-percent">Win percent: 0%</span>
+      <div id="guessed-in">
+        <span id="guessed-in-one"></span>
+        <span id="guessed-in-two"></span>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

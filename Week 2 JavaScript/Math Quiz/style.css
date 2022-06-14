@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#submit-button {
+    margin: 20px;
+    padding: 15px;
+    background-color: rgb(213, 213, 213);
+    border-radius: 50px;
+    border: none;
+}
+
+#next-question {
+    margin: 20px;
+    padding: 15px;
+    background-color: rgb(213, 213, 213);
+    border-radius: 50px;
+    border: none;
+}
+
+#right-or-wrong {
+    font-size: 20px;
+}

@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#display-addresses {
+    font-size: 20px;
+    padding: 5px;
+}

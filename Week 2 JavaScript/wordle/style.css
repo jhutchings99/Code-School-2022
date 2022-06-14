@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #121213;
+    text-transform: uppercase;
+    color: white;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+h1 {
+    color: #E4E4E4;
+    text-align: center;
+}
+
+#header-container {
+    border-bottom: 1px solid #3A3A3C;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.guess {
+    display: flex;
+}
+
+.letter {
+    border: 2px solid #3A3A3C;
+    margin: 2px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+}
+
+#word-input {
+    height: 50px;
+    font-size: 20px;
+    border: 2px solid #3A3A3C;
+    color: white;
+    margin-top: 30px;
+}
+
+#guess-button {
+    border: none;
+    background-color: #818384;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+#reset-button {
+    border: none;
+    background-color: #818384;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 50px;
+    margin: 20px;
+    font-size: 20px;
+}
+
+#message {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+#keyboard-container {
+    height: 200px;
+    margin: 10px;
+    width: 500px;
+}
+
+.keyboard-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto 8px;
+    touch-action: manipulation;
+}
+
+.keyboard-row button {
+    font-weight: bold;
+    border: 0;
+    padding: 0;
+    height: 58px;
+    cursor: pointer;
+    background-color: #818384;
+    color: white;
+    flex-grow: 1;
+    text-transform: uppercase;
+    margin-right: 6px;
+    border-radius: 4px;
+    user-select: none;
+}
+
+.keyboard-row button.wide-button {
+    flex-grow: 1.5;
+}
+
+.spacer-half {
+    flex-grow: 0.5;
+}
+
+.guessed {
+    background-color: gray;
+    border: 0;
+}
+
+.match {
+    background-color: green;
+}
+
+.contains {
+    background-color: #C9B458;
+}
+
+.wrong {
+    background-color: gray;
+}
+
+#guessed-in {
+    display: flex;
+    flex-direction: column;
+}

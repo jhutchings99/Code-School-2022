@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    background-color: #eee;
+    width: 100%;
+}
+
+.section-details {
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+img {
+    width: 20%;
+}
+
+.section-text {
+    width: 20%;
+}
