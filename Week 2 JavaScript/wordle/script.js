@@ -245,5 +245,6 @@ for (var i = 0; i < keys.length; i++) {
     }
 }
 
+updateGuesses();
 fetchWordList();
 setupInputs();
